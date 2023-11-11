@@ -10,7 +10,9 @@ spec:
   - port: 8080
     protocol: TCP
     targetPort: 8080
+    nodePort: 31007
   selector:
     name: gop-file-server
+  type: NodePort
 status:
   loadBalancer: {}
