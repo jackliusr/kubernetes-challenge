@@ -44,6 +44,8 @@ Hidden requirements:
 - containerPort in db pod
 - POSTGRES_USER and POSTGRES_PASSWORD
 
+Create db first, then worker later. Worker deployment need to take a while.
+
 ## References: 
 - https://github.com/kodekloudhub/kubernetes-challenges
 - https://kodekloud.com/courses/kubernetes-challenges/
