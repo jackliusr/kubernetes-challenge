@@ -13,7 +13,10 @@ spec:
   initContainers:
   - name: copy-jekyll-site
     image: kodekloud/jekyll
-    command: [ "jekyll", "new", "/site" ]
+    command:  
+    - jekyll
+    - new
+    - /site
     volumeMounts:
     - name: site
       mountPath: /site 
