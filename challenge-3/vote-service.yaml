@@ -10,7 +10,7 @@ spec:
   ports:
   - port: 5000
     protocol: TCP
-    targetPort: 50
+    targetPort: 80
     nodePort: 31000
   selector:
     app: vote-deployment
