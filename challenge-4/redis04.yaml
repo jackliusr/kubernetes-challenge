@@ -10,4 +10,3 @@ spec:
     - ReadWriteOnce
   hostPath:
     path: /redis04
-    type: Directory
