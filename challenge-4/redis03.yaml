@@ -11,11 +11,3 @@ spec:
   hostPath:
     path: /redis03
     type: Directory
-  nodeAffinity:
-    required:
-      nodeSelectorTerms:
-        - matchExpressions:
-            - key: kubernetes.io/hostname
-              operator: In
-              values:
-                - node01
