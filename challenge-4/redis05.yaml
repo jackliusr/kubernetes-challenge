@@ -13,8 +13,8 @@ spec:
     type: Directory
   nodeAffinity:
     required:
-      - nodeSelectorTerms:
-          matchExpressions:
+      nodeSelectorTerms:
+        - matchExpressions:
             - key: kubernetes.io/hostname
               operator: In
               values:
