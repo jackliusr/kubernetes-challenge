@@ -5,6 +5,7 @@ metadata:
   labels:
     app: db-deployment
   name: db-deployment
+  namespace: vote
 spec:
   replicas: 1
   selector:
@@ -35,5 +36,5 @@ spec:
               mountPath: /var/lib/postgresql/data
           resources: {}
           ports:
-          - containerPort: 5432
+            - containerPort: 5432
 status: {}
