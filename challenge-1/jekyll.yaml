@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx
+  name: jekyll
   namespace: development
   labels:
     run: jekyll
