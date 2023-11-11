@@ -19,7 +19,7 @@ spec:
       - name: conf
         configMap:
           name: redis-cluster-configmap
-          defaultMode: 0o755
+          defaultMode: 0755
       containers:
       - name: redis
         image: redis:5.0.1-alpine
