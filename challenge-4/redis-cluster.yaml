@@ -29,6 +29,7 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: status.podIP
+              apiVersion: v1
         ports:
         - containerPort: 6379
           name: client
@@ -37,8 +38,10 @@ spec:
         volumeMounts:
         - name: data
           mountPath: /data
+          readOnly: false
         - name: conf
           mountPath: /conf
+          readOnly: false
   volumeClaimTemplates:
   - metadata:
       name: data
